@@ -27,7 +27,7 @@ jobs:
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/github-actions-demo:latest
           ${{ secrets.DOCKERHUB_USERNAME }}/github-actions-demo:${{ github.sha }}
-    - uses: azure/k8s-set-context@v1
+    - uses: aws/k8s-set-context@v1
       with:
         method: kubeconfig
         kubeconfig: ${{ secrets.KUBE_CONFIG }}
