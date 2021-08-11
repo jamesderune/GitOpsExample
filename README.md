@@ -13,9 +13,9 @@ cat Dockerfile
 
 cat .github/workflows/pr.yaml
 
-##########################
 # Running GitHub Actions #
-##########################
+
+Notice you need to install gh for this (gitlab cli) but you can still just use the GUI for this
 
 gh pr create \
     --title "My feature" \
